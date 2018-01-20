@@ -1,0 +1,14 @@
+---
+
+server:
+  port: 8077
+
+spring:
+  cloud:
+    stream:
+      default:
+        contentType: application/json
+      bindings:
+        door:
+          destination: doorChannel
+          binder: rabbit
